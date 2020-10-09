@@ -12,6 +12,9 @@ pipelines:
       - name: step_1
         type: Bash
         configuration:
+          runtime:
+            type: host
+        configuration:
           inputResources:
             - name: myGitRepo         
         execution:
